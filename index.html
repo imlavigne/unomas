@@ -5,15 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <title>GerboWeb</title>
+    <title>unomas</title>
     <link rel="stylesheet" href="styles.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
     <header class="headercontainer">
+            <!-- //barra menu -->
+    <div id="menu_label"> 
         <i class="fa-solid fa-bars " id="barmenu"></i>
-        <i>LOGO</i>
+        
+        <ul class="navbar hidden" id="navbarlist">
+            <div class="menu">
+            <h4>MENU</h4>
+            <i class="fa-solid fa-xmark xmenu" id="xmenu"></i>
+          </div>  
+          <div class="navbar-list">
+          <li >Todo</li>
+          <li  data-item="PERROS">PERROS</li>
+            <li  data-item="gatos">GATOS</li>
+            <li >QUIENES SOMOS</li>
+            <li >CONTACTO</li>
+          </div>  
+          </ul>
+    </div>
+        <img src="./imagenes/logo1mas.jpeg">
+        <i class="fa-solid fa-magnifying-glass"></i>
 
     </header>
+    <!--            buscador -->
+
     <div class="itemcontainer">
         <div class="item perro" data-item="Perros">
             <p>Perros</p>
@@ -29,7 +53,41 @@
 
             </div>
         </div>
+    
+    <!-- productos    -->
+
+    <!-- quien somos -->
+    <div class="item quienesSomos">
+    <h2> QUIENES SOMOS</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint suscipit eveniet voluptate earum. Quos iste modi molestiae voluptatibus ratione culpa vero nobis doloremque tenetur ea molestias temporibus, amet minus ad dignissimos laborum, sed commodi quas? Quos cum ratione neque nulla veniam consectetur nostrum fugiat id, quas quod dolorem, sed totam doloribus </p>
     </div>
+
+    <!-- mensaje -->
+     <!-- ponemos el logo de whatsapp -->
+  <div class="whatsapp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <!-- <i class="fa-brands fa-square-whatsapp"></i> -->
+  </div>
+  <!-- contactos -->
+  <div class="contactoContainer item">
+    <h2>DEJANOS TU MENSAJE</h2>
+    <div class="contacto">
+        <div class="input">
+            <label for="nombre">Nombre: </label>
+            <input type="text" placeholder="INGRESE SU NOMBRE">
+     </div>
+     <div class="input">
+            <label >Email:</label>
+            <input type="email" placeholder="INGRESE SU EMAIL">
+    </div>
+    <div class="input">
+            <label>Consulta:</label>
+            <textarea placeholder="INGRESE SU CONSULTA"></textarea>
+    </div>
+     <input type="submit" value="ENVIAR">
+  </div>
+  </div>
+</div>
     
     <script src="./main.js"></script>
 </body>
