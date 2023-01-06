@@ -77,8 +77,8 @@ body{
     width: 90%;
     /* background-color: coral; */
     margin: 1rem auto;
-    border-radius: 5%;
-    box-shadow: 10px 5px 5px gray;
+    border-radius: 16%;
+    /* box-shadow: 10px 5px 5px gray; */
     height: 100%;
     
 
@@ -109,8 +109,8 @@ body{
     width: 90%;
     background-color: white;
     /* margin: 0 auto; */
-    border-radius: 5%;
-    box-shadow: 10px 5px 5px gray;
+    /* border-radius: 5%; */
+    /* box-shadow: 10px 5px 5px gray; */
     /* height: 100vh; */
 
 }
@@ -176,7 +176,7 @@ min-height: 100px;
     position: fixed;
     right: 5px;
     bottom: 10px;
-  /* background-color: green; */
+    color: #168236;
     animation: shakeY; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 10s; 
     /* color: blue; */
