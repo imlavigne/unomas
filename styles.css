@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: black;
+    background-color: white;
 }
 
 .navbar{
@@ -63,8 +63,11 @@ body{
     padding: 2rem;
 
 }
+.menuicon{
+    color: white;
+}
 .headercontainer img{
-    width:80px ;
+    width:50px ;
 }
 .itemcontainer{
     display: flex;
@@ -98,10 +101,12 @@ body{
 .perro{
     font-size: 50px;
     background-color: coral;
+    height: 100px;
 }
 .gato{
     font-size: 50px;
     background-color: aqua;
+    height: 100px;
 }
 .marcas{
     
