@@ -1,5 +1,6 @@
 const LogoMarcas=document.getElementById('logos');
-
+const barmenu=document.getElementById('barmenu');
+const navbarlist=document.getElementById('navbarlist');
 const logosmarcas=[
    
     {   
@@ -54,8 +55,14 @@ const renderlogocart=log=>{
 const renderlogo= (p)=>{
     LogoMarcas.innerHTML=p.map(renderlogocart).join(''); 
 }
+const menutogle=()=> {
+    console.log('pepe');
+    navbarlist.classList.toggle('hidden');
+
+}
 
 const init =()=>{
     renderlogo(logosmarcas);
+    barmenu.addEventListener("click",menutogle);
 }
 init();
