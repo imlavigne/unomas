@@ -117,11 +117,12 @@ body{
     color: black;
     font-size: 50px;
     width: 90%;
-    background-color: white;
+    /* background-color: greenyellow; */
     /* margin: 0 auto; */
     /* border-radius: 5%; */
     /* box-shadow: 10px 5px 5px gray; */
     /* height: 100vh; */
+    border: solid;
 
 }
 .logomarcas{
@@ -184,11 +185,41 @@ min-height: 100px;
 .whatsapp{
     font-size: 3.5rem;
     position: fixed;
-    right: 5px;
+    right: 15px;
     bottom: 10px;
     color: #168236;
     animation: shakeY; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 10s; 
     /* color: blue; */
     animation-iteration-count: infinite;
+  }
+  .footerContainer{
+    background-color:#186781;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .footer{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    gap:0.5rem;
+  }
+  .footer li{
+    font-size: 15px;
+  }
+  .footer h2{
+    font-size: 20px;
+  }
+  .redes i{
+    font-size: 20px;
+  }
+  .footerContainer p{
+    
+    font-size: 15px;
   }

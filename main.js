@@ -1,59 +1,56 @@
-const LogoMarcas=document.getElementById('logos');
+const logoMarcas=document.getElementById('logos');
 const barmenu=document.getElementById('barmenu');
 const navbarlist=document.getElementById('navbarlist');
 const logosmarcas=[
    
     {   
     
-        Marcaimg :'./imagenes/logo/balanced-logo.jpg',
+        marcaImg :'./imagenes/logo/balanced-logo.jpg',
        
     },
     {
-        Marcaimg :'./imagenes/logo/Belcan.png',
+        marcaImg :'./imagenes/logo/Belcan.png',
         
     },
     {
-        Marcaimg :'./imagenes/logo/capitan-logo.png',
+        marcaImg :'./imagenes/logo/capitan-logo.png',
     },
     {
-        Marcaimg :'./imagenes/logo/Crianza-logo-PNG-1536x480.png',
+        marcaImg :'./imagenes/logo/Crianza-logo-PNG-1536x480.png',
     },
     {
-        Marcaimg :'./imagenes/logo/Dog-Chow-1.jpg',
+        marcaImg :'./imagenes/logo/Dog-Chow-1.jpg',
     },
     {
-        Marcaimg :'./imagenes/logo/Dog-Selection.png',
+        marcaImg :'./imagenes/logo/Dog-Selection.png',
     },
     {
-        Marcaimg :'./imagenes/logo/Excellent.jpg',
+        marcaImg :'./imagenes/logo/Excellent.jpg',
     },
     {
-        Marcaimg :'./imagenes/logo/Logo-RoyalCanin-b.jpg',
+        marcaImg :'./imagenes/logo/Logo-RoyalCanin-b.jpg',
     },
     {
-        Marcaimg :'./imagenes/logo/purina-pro-plan.jpg',
+        marcaImg :'./imagenes/logo/purina-pro-plan.jpg',
     },
     {
-        Marcaimg :'./imagenes/logo/Sabrositos.png',
+        marcaImg :'./imagenes/logo/Sabrositos.png',
     },
     {
-        Marcaimg :'./imagenes/logo/vital-can-logo.png',
+        marcaImg :'./imagenes/logo/vital-can-logo.png',
         
     },
 ];
 const renderlogocart=log=>{
-    console.log('hola');
+    // console.log('hola');
     return`
-    <div class="logomarca">
-         
-        <img src="${log.Marcaimg}" alt="" />
-        
-    </div>
-    `
+    <div class="logomarca">         
+        <img src="${log.marcaImg}" alt="" />        
+    </div>    `
 }
 
 const renderlogo= (p)=>{
-    LogoMarcas.innerHTML=p.map(renderlogocart).join(''); 
+    logoMarcas.innerHTML=p.map(renderlogocart).join(''); 
 }
 const menutogle=()=> {
     console.log('pepe');
