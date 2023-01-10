@@ -26,11 +26,18 @@ body{
 
     gap: 0.5rem;
 }
+.navbar-list {
+    width: 100%;
+}
+
+
 .navbar-list li{
     display: flex;
     flex-direction: column;
     align-items:center;
     margin: 1rem;
+    border-bottom: 1px solid white;
+    color:#eef3f7
 }
 
 .hidden{
@@ -52,7 +59,7 @@ body{
 .headercontainer{
     background-color:#186781;
     /* background-color:#925747; */
-    font-size: 30px;
+    font-size: 1.5rem;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -102,12 +109,12 @@ body{
     max-width: 100px;
 }
 .perro{
-    font-size: 50px;
+    font-size: 40px;
     /* background-color: coral; */
     height: 100px;
 }
 .gato{
-    font-size: 50px;
+    font-size: 40px;
     /* background-color: aqua; */
     height: 100px;
 }
@@ -119,7 +126,7 @@ body{
     justify-content: space-around;
     /* color: black; */
     color: #074F71;
-    font-size: 50px;
+    font-size: 40px;
     width: 90%;
     /* background-color: greenyellow; */
     /* margin: 0 auto; */
@@ -137,6 +144,7 @@ body{
     text-align:center;
     flex-wrap: wrap;
     gap:0.5rem;
+    padding-bottom: 10px;
     /* margin: 0 auto; */
     
 }
@@ -146,7 +154,7 @@ body{
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;   
-    /* border-radius: 100%; */
+    border-radius: 100%;
 }
 
 .logomarca {
@@ -249,7 +257,8 @@ min-height: 100px;
     font-size: 20px;
   }
   .redes i{
-    font-size: 80px;
+    font-size: 50px;
+    color:white;
   }
   .footerContainer p{
     
