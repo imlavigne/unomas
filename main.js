@@ -5,7 +5,7 @@ const logosmarcas=[
    
     {   
     
-        marcaImg :'./imagenes/logo/balanced-logo.jpg',
+        marcaImg :'./imagenes/logo/balanced-logo.png',
        
     },
     {
@@ -16,19 +16,19 @@ const logosmarcas=[
         marcaImg :'./imagenes/logo/capitan-logo.png',
     },
     {
-        marcaImg :'./imagenes/logo/Crianza-logo-PNG-1536x480.png',
+        marcaImg :'./imagenes/logo/Crianza-logo.png',
     },
     {
-        marcaImg :'./imagenes/logo/Dog-Chow-1.jpg',
+        marcaImg :'./imagenes/logo/Dog-Chow-1.png',
     },
     {
         marcaImg :'./imagenes/logo/Dog-Selection.png',
     },
     {
-        marcaImg :'./imagenes/logo/Excellent.jpg',
+        marcaImg :'./imagenes/logo/Excellent.png',
     },
     {
-        marcaImg :'./imagenes/logo/Logo-RoyalCanin-b.jpg',
+        marcaImg :'./imagenes/logo/Logo-RoyalCanin-b.png',
     },
     {
         marcaImg :'./imagenes/logo/purina-pro-plan.jpg',
@@ -41,11 +41,38 @@ const logosmarcas=[
         
     },
 ];
+const products =[
+    {
+    marca: 'Sabrositos',
+    descripcio : 'Cachorros 18 Kg',
+    animal:'perro',
+    },
+    {
+    marca: 'Sabrositos',
+    descripcio : 'Adulto 15 Kg',
+    animal:'perro',
+    },
+    {
+    marca: 'Infinity',
+    descripcio : 'Adulto 15 Kg',
+    animal:'perro',
+    }, 
+    {
+    marca: 'Infinity',
+    descripcio : 'Cachorros 10 Kg',
+    animal:'perro',
+    },
+    {
+    marca: 'Sabrositos',
+    descripcio : 'Adulto 18 Kg',
+    animal:'perro',
+    },                
+];
 const renderlogocart=log=>{
     // console.log('hola');
     return`
     <div class="logomarca">         
-        <img src="${log.marcaImg}" alt="" />        
+        <div class="imagenDiv" style="background-image:url(${log.marcaImg})" alt=""></div>
     </div>    `
 }
 
