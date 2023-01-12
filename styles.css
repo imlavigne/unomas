@@ -103,10 +103,10 @@ body{
 }
 
 .gato img{
-    max-width: 170px;
+    max-width: 110px;
 }
 .perro img{
-    max-width: 100px;
+    max-width: 220px;
 }
 .perro{
     font-size: 40px;

@@ -6,38 +6,48 @@ const logosmarcas=[
     {   
     
         marcaImg :'./imagenes/logo/balanced-logo.png',
+        marca:'logo',
        
     },
     {
         marcaImg :'./imagenes/logo/Belcan.png',
-        
+        marca:' belcan',
     },
     {
         marcaImg :'./imagenes/logo/capitan-logo.png',
+        marca:'capitan',
     },
     {
         marcaImg :'./imagenes/logo/Crianza-logo.png',
+        marca:'crianza',
     },
     {
         marcaImg :'./imagenes/logo/Dog-Chow-1.png',
+        marca:'dog chow',
     },
     {
         marcaImg :'./imagenes/logo/Dog-Selection.png',
+        marca:'dog selection',
     },
     {
         marcaImg :'./imagenes/logo/Excellent.png',
+        marca:'excellent',
     },
     {
         marcaImg :'./imagenes/logo/Logo-RoyalCanin-b.png',
+        marca:'royalcanin',
     },
     {
-        marcaImg :'./imagenes/logo/purina-pro-plan.jpg',
+        marcaImg :'./imagenes/logo/purina-pro-plan.png',
+        marca:'pro plan',
     },
     {
         marcaImg :'./imagenes/logo/Sabrositos.png',
+        marca:'sabrositos',
     },
     {
         marcaImg :'./imagenes/logo/vital-can-logo.png',
+        marca:'vital can',
         
     },
 ];
