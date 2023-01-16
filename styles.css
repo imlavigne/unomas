@@ -293,9 +293,12 @@ min-height: 100px;
   }
   .productoImg{
     /* height: 200px; */
+    
   }
   .productoImg img{
-    width: 150px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
   }
   .producto p{
     /* background-color: #186781; */
