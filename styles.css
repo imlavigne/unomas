@@ -12,7 +12,7 @@ body{
 }
 
 .navbar{
-    
+
     background-color:#186781;
     position:absolute;
     top: 80px;;
@@ -42,7 +42,7 @@ body{
 
 .hidden{
     display: none;
-    
+
 }
 
 .menu{
@@ -75,7 +75,8 @@ body{
     color: white;
 }
 .headercontainer img{
-    width:50px ;
+  margin-top: 8px;
+    width:80px ;
 }
 .itemcontainer{
     display: flex;
@@ -98,7 +99,7 @@ body{
     /* box-shadow: 10px 5px 5px gray; */
     height: 100%;
     background-color: #eef3f7;
-    
+
 
 }
 
@@ -119,7 +120,7 @@ body{
     height: 100px;
 }
 .marcas{
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,14 +147,14 @@ body{
     gap:0.5rem;
     padding-bottom: 10px;
     /* margin: 0 auto; */
-    
+
 }
 .imagenDiv {
     background-position: center center;
     background-size: contain;
     height: 100%;
     width: 100%;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
     border-radius: 100%;
 }
 
@@ -177,7 +178,7 @@ body{
     text-align: center;
     /* color: white; */
     /* background-color: aqua; */
-    
+
     gap:2rem;
     padding: 1rem;
 }
@@ -188,13 +189,13 @@ h2{
     font-size: 20px;
 }
 .contactoContainer{
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* background-color: blue; */
-    
+
     padding: 1rem;
     display: none;
 }
@@ -206,7 +207,7 @@ h2{
     width: 250px;
     gap: 0.5rem;
     padding: 1rem;
-   
+
 }
 .input input{
 width: 250px;
@@ -261,7 +262,7 @@ min-height: 100px;
     color:white;
   }
   .footerContainer p{
-    
+
     font-size: 15px;
     /* pepe */
   }
@@ -285,19 +286,17 @@ min-height: 100px;
   .producto{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     /* border: solid; */
     width: 120px;
-    gap: 1rem;
+    gap: 0.1rem;
   }
-  .productoImg{
-    /* height: 200px; */
-    
-  }
+  
   .productoImg img{
-    width: 200px;
-    height: 200px;
+    
+    max-width: 200px;
+    max-height: 200px;
     object-fit: cover;
   }
   .producto p{
@@ -313,7 +312,8 @@ min-height: 100px;
     color: white;
     font-family: 'Open Sans';
     margin-top: 2rem;
-    
+    margin-bottom: 2rem;
+
   }
   .btnhiden{
     display: none;
