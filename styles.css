@@ -104,21 +104,49 @@ body{
 }
 
 .gato img{
-    max-width: 110px;
+    /* max-width: 110px; */
+
+    /* background-color: aqua; */
 }
 .perro img{
-    max-width: 220px;
+    /* max-width: 110px; */
+    /* margin-left: 2rem; */
+    /* background-color: aqua; */
 }
-.perro{
+/* .perro{
     font-size: 40px;
-    /* background-color: coral; */
+    
     height: 100px;
 }
 .gato{
     font-size: 40px;
-    /* background-color: aqua; */
+  
     height: 100px;
+} */
+.perroGatoContainer{
+  /* background-color: #074F71; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 40PX;
 }
+.perroGato{
+  height: 110px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.perro img{
+  height: 110px;
+  position: absolute;
+  right: 85px;
+}
+.gato img{
+  height: 110px;
+}
+
 .marcas{
 
     display: flex;
