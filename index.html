@@ -22,16 +22,17 @@
             <div class="menu">         
             <!-- <i class="fa-solid fa-xmark xmenu" id="xmenu"></i> -->
           </div>  
-          <div class="navbar-list">
-          <li  data-item="perros">Perros</li>
-            <li  data-item="gatos">Gatos</li>
-            <li >Quienes somos</li> 
-            <li >Contactos</li>
+          <div class="navbar-list animal">
+          <li > <a href="index.html">Inicio</a></li>
+          <li  data-animal="perro">Perros</li>
+            <li  data-animal="gato">Gatos</li>
+            <li ><a href="#quienesSomos">Quienes somos</a></li> 
+            <!-- <li >Contactos</li> -->
           </div>  
           </ul>
     </div>
     <div>
-        <img src="./imagenes/logo1mas2.png">
+        <a href="./index.html"> <img src="./imagenes/logo1mas2.png"></a>
     </div>
         <i class="fa-solid fa-magnifying-glass menuicon"></i>
 
@@ -40,16 +41,16 @@
 
     <div class="itemcontainer">
         <div class="perroGatoContainer">
-        <div class="item perro perroGato" data-item="Perros">
+        <div class="item perro perroGato animal" data-animal="perro">
             <p>Perros</p>
             <img src="./imagenes/imagenes/Perro2.png"/>
         </div>
-        <div class="item gato perroGato" data-item="gatos">
+        <div class="item gato perroGato animal" data-animal="gato">
             <p>Gatos</p>
             <img src="./imagenes/imagenes/Gato.png"/>
         </div>
         </div>
-        <div class=" item marcas" >
+        <div class=" item marcas" id="marcas" >
             <h3> Marcas</h3>
             <div class="logomarcas" id="logos"></div>
         </div>
@@ -63,7 +64,7 @@
             <button class="verMasbtn" id="vermasbtn"> Ver mas</button>
         </div>
     <!-- quien somos -->
-    <div class="item quienesSomos">
+    <div class="item quienesSomos" id="quienesSomos">
     <h2> QUIENES SOMOS</h2>
         <p>Somos una empresa familiar dedicada a la nutrición animal y venta de accesorios para mascotas.
 

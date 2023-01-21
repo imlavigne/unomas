@@ -3,6 +3,12 @@ const barmenu=document.getElementById('barmenu');
 const navbarlist=document.getElementById('navbarlist');
 const productos=document.getElementById('productos');
 const vermasbtn=document.getElementById('vermasbtn');
+const quienesSomos=document.getElementById('quienesSomos');
+const marcas=document.getElementById('marcas');
+const animal=document.querySelectorAll('.animal');
+const navbar=document.querySelector('.navbar-list');
+const perroGatoContainer=document.querySelector('.perroGatoContainer');
+
 const logosmarcas=[
    
     {   
@@ -311,7 +317,7 @@ const renderlogo= (p)=>{
     logoMarcas.innerHTML=p.map(renderlogocart).join(''); 
 }
 const renderproduct=p=>{
-    console.log('hola');
+    // console.log('hola');
     return`
         <div class="producto">
         <div class="productoImg">
@@ -327,8 +333,11 @@ const renderproduct=p=>{
 const renderproducts= (p)=>{
     productos.innerHTML+=p.map(renderproduct).join(''); 
 }
+const renderproductfilter= (p)=>{
+    productos.innerHTML=p.map(renderproduct).join(''); 
+}
 const menutogle=()=> {
-    console.log('pepe');
+    // console.log('pepe');
     navbarlist.classList.toggle('hidden');
 
 }
@@ -339,7 +348,7 @@ const splitProducts =size=>{
     for (i=0; i<products.length; i += size){
       divideProducts.push(products.slice(i,i + size));
     }
-    console.log(divideProducts);
+    // console.log(divideProducts);
     return divideProducts;
 
   }
@@ -365,7 +374,29 @@ const splitProducts =size=>{
   }
   if(productsController.actual==6){
     vermasbtn.classList.add('btnhiden');
+    
 }
+
+}
+//-----------filtro por animal------
+const filtrarAnimal =(e)=>{
+    const animalSelect=e.target.dataset.animal;
+    // console.log(e.target.dataset.animal);
+    console.log(animalSelect);
+    if(!animalSelect){
+
+        
+    }
+    else{
+        let filtrado = products.filter(p => p.animal === animalSelect)
+        console.log(filtrado);
+        renderproductfilter(filtrado);
+        vermasbtn.classList.add('btnhiden');
+        quienesSomos.classList.add('btnhiden');
+        marcas.classList.add('btnhiden');
+        navbarlist.classList.add('hidden');
+
+    }
 
 }
 
@@ -375,7 +406,8 @@ const init =()=>{
     // renderproducts(products);
    
     renderproducts(productsController.dividedProducts[0]);
-
+    perroGatoContainer.addEventListener("click",filtrarAnimal);
+    navbar.addEventListener("click",filtrarAnimal);
     barmenu.addEventListener("click",menutogle);
     vermasbtn.addEventListener("click",verMas);
 }
