@@ -394,7 +394,7 @@ const filtrarAnimal =(e)=>{
         renderproductfilter(filtrado);
         vermasbtn.classList.add('btnhiden');
         quienesSomos.classList.add('btnhiden');
-        // marcas.classList.add('btnhiden');
+        marcas.classList.add('btnhiden');
         navbarlist.classList.add('hidden');
 
     }
@@ -411,11 +411,14 @@ const filtrarMarcas =(e)=>{
         
     }
     else{
-        let filtrado = products.filter(p => p.marca == marcaSelect)
-        console.log(filtrado);
+        let filtrado = products.filter(p => p.marca == marcaSelect);
+        let filtradoMarcas = logosmarcas.filter(p => p.marca == marcaSelect);
+
+        // console.log(filtrado);
         renderproductfilter(filtrado);
         vermasbtn.classList.add('btnhiden');
         quienesSomos.classList.add('btnhiden');
+        renderlogo(filtradoMarcas);
         // marcas.classList.add('btnhiden');
         navbarlist.classList.add('hidden');
 
