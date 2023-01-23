@@ -17,6 +17,7 @@ body{
     background-color: white;
 }
 
+
 .navbar{
 
     background-color:#186781;
@@ -79,6 +80,9 @@ body{
 }
 .menuicon{
     color: white;
+}
+.lupa{
+  color:#186781; 
 }
 .headercontainer img{
   margin-top: 8px;
