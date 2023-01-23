@@ -325,7 +325,7 @@ const renderproduct=p=>{
         </div>
        
         <p>${p.descripcion}</p>
-        <div class="precio">$${p.precio.toLocaleString('es-MX')}</div>
+        <div class="precio">$${p.precio.toLocaleString('de-DE')}</div>
 
     </div>`
 }
