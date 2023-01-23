@@ -394,7 +394,7 @@ const filtrarAnimal =(e)=>{
         renderproductfilter(filtrado);
         vermasbtn.classList.add('btnhiden');
         quienesSomos.classList.add('btnhiden');
-        marcas.classList.add('btnhiden');
+        // marcas.classList.add('btnhiden');
         navbarlist.classList.add('hidden');
 
     }
@@ -416,7 +416,7 @@ const filtrarMarcas =(e)=>{
         renderproductfilter(filtrado);
         vermasbtn.classList.add('btnhiden');
         quienesSomos.classList.add('btnhiden');
-        marcas.classList.add('btnhiden');
+        // marcas.classList.add('btnhiden');
         navbarlist.classList.add('hidden');
 
     }
