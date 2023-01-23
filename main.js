@@ -6,6 +6,7 @@ const vermasbtn=document.getElementById('vermasbtn');
 const quienesSomos=document.getElementById('quienesSomos');
 const marcas=document.getElementById('marcas');
 const animal=document.querySelectorAll('.animal');
+
 const navbar=document.querySelector('.navbar-list');
 const perroGatoContainer=document.querySelector('.perroGatoContainer');
 
@@ -14,48 +15,48 @@ const logosmarcas=[
     {   
     
         marcaImg :'./imagenes/logo/balanced-logo.png',
-        marca:'logo',
+        marca:'Balanced',
        
     },
     {
         marcaImg :'./imagenes/logo/Belcan.png',
-        marca:' belcan',
+        marca:'Belcan',
     },
     {
         marcaImg :'./imagenes/logo/capitan-logo.png',
-        marca:'capitan',
+        marca:'Capitan',
     },
     {
         marcaImg :'./imagenes/logo/Crianza-logo.png',
-        marca:'crianza',
+        marca:'Crianza',
     },
     {
         marcaImg :'./imagenes/logo/Dog-Chow-1.png',
-        marca:'dog chow',
+        marca:'Dog Chow',
     },
     {
         marcaImg :'./imagenes/logo/Dog-Selection.png',
-        marca:'dog selection',
+        marca:'Dog Selection',
     },
     {
         marcaImg :'./imagenes/logo/Excellent.png',
-        marca:'excellent',
+        marca:'Excellent',
     },
     {
         marcaImg :'./imagenes/logo/Logo-RoyalCanin-b.png',
-        marca:'royalcanin',
+        marca:'Royal Canin',
     },
     {
         marcaImg :'./imagenes/logo/purina-pro-plan.png',
-        marca:'pro plan',
+        marca:'Proplan',
     },
     {
         marcaImg :'./imagenes/logo/Sabrositos.png',
-        marca:'sabrositos',
+        marca:'Sabrositos',
     },
     {
         marcaImg :'./imagenes/logo/vital-can-logo.png',
-        marca:'vital can',
+        marca:'Vitalcan',
         
     },
 ];
@@ -309,7 +310,7 @@ const renderlogocart=log=>{
     // console.log('hola');
     return`
     <div class="logomarca">         
-        <div class="imagenDiv" style="background-image:url(${log.marcaImg})" alt=""></div>
+        <div class="imagenDiv" data-logomarca="${log.marca}" style="background-image:url(${log.marcaImg})" alt=""></div>
     </div>    `
 }
 
@@ -382,7 +383,7 @@ const splitProducts =size=>{
 const filtrarAnimal =(e)=>{
     const animalSelect=e.target.dataset.animal;
     // console.log(e.target.dataset.animal);
-    console.log(animalSelect);
+    // console.log(animalSelect);
     if(!animalSelect){
 
         
@@ -400,6 +401,27 @@ const filtrarAnimal =(e)=>{
 
 }
 
+//-----------filtro por marca------
+const filtrarMarcas =(e)=>{
+    const marcaSelect=e.target.dataset.logomarca;
+     console.log(e.target.dataset.logomarca);
+    console.log(marcaSelect);
+    if(!marcaSelect){
+
+        
+    }
+    else{
+        let filtrado = products.filter(p => p.marca == marcaSelect)
+        console.log(filtrado);
+        renderproductfilter(filtrado);
+        vermasbtn.classList.add('btnhiden');
+        quienesSomos.classList.add('btnhiden');
+        marcas.classList.add('btnhiden');
+        navbarlist.classList.add('hidden');
+
+    }
+
+}
 
 const init =()=>{
     renderlogo(logosmarcas);
@@ -410,5 +432,6 @@ const init =()=>{
     navbar.addEventListener("click",filtrarAnimal);
     barmenu.addEventListener("click",menutogle);
     vermasbtn.addEventListener("click",verMas);
+    marcas.addEventListener("click",filtrarMarcas);
 }
 init();
