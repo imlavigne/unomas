@@ -278,7 +278,7 @@ min-height: 100px;
     
     position: fixed;
     left: 25px;
-    bottom: 110px;
+    top: 110px;
     /* color: white; */
     background:rgba(255, 81, 36, 1);
    /* animation: shakeY;
