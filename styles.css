@@ -88,6 +88,20 @@ body{
   margin-top: 8px;
     width:80px ;
 }
+.off5{
+  background-color: red;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 1000;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  position: sticky;
+  width:100vw;
+    top:80px;
+    z-index: 10;
+}
 .itemcontainer{
     display: flex;
     flex-direction: column;
