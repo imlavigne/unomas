@@ -278,13 +278,13 @@ min-height: 100px;
     
     position: fixed;
     left: 25px;
-    bottom: 10px;
+    bottom: 110px;
     /* color: white; */
     background:rgba(255, 81, 36, 1);
-    animation: shakeY;
+   /* animation: shakeY;
     animation-duration: 10s;
-    /* color: blue; */
-    animation-iteration-count: infinite;
+    color: blue; 
+    animation-iteration-count: infinite;*/
     border-radius: 50%;
     height: 80px;
     width: 80px;
