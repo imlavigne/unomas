@@ -88,20 +88,7 @@ body{
   margin-top: 8px;
     width:80px ;
 }
-.off5{
-  background-color: red;
-  color: white;
-  font-family: sans-serif;
-  font-weight: 1000;
-  font-size: 35px;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  position: sticky;
-  width:100vw;
-    top:80px;
-    z-index: 10;
-}
+
 .itemcontainer{
     display: flex;
     flex-direction: column;
@@ -286,6 +273,32 @@ min-height: 100px;
     height: 80px;
     width: 80px;
   }
+  .off5{
+    text-align: center;
+    
+    position: fixed;
+    left: 25px;
+    bottom: 10px;
+    /* color: white; */
+    background:rgba(255, 81, 36, 1);
+    animation: shakeY;
+    animation-duration: 10s;
+    /* color: blue; */
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    /* font-size: 1rem; */
+  }
+  .off5 img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 65px;
+  }
   .footerContainer{
     background-color:#186781;
     display: flex;
@@ -293,15 +306,16 @@ min-height: 100px;
     align-items: flex-start;
     justify-content: center;
     color: white;
-    gap: 2rem;
-    padding: 2rem;
+    gap: 1rem;
+    padding: 1rem;
   }
   .footer{
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items:center;
     justify-content: center;
     gap:0.5rem;
+    /* background-color: #168236; */
   }
   .footer li{
     font-size: 15px;
@@ -315,8 +329,13 @@ min-height: 100px;
   }
   .footerContainer p{
 
-    font-size: 15px;
+    font-size: 8px;
     /* pepe */
+  }
+  .instagr{
+    display: flex;
+    flex-direction: row;
+    gap:1.5rem;
   }
 
   /* productos */
@@ -326,9 +345,10 @@ min-height: 100px;
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    background-color: white;
+    background-color:white;
     border: solid;
     border-radius: 16px;
+    /* padding-bottom: 1.5rem; */
   }
   .productos{
     display: flex;
@@ -337,6 +357,8 @@ min-height: 100px;
     /* align-items: center; */
     flex-wrap: wrap;
     gap: 1rem;
+    /* background-color: #168236; */
+    padding-bottom: 1.5rem;
     
   }
   .producto{
@@ -386,4 +408,5 @@ min-height: 100px;
     font-size: 1.5rem;
     margin-top: 1rem;
   }
+ 
   
