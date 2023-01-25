@@ -269,7 +269,7 @@ const products =[
     {marca: 'Capitan',
     descripcion : 'Alimento Capitan Para Perro Adulto 22 Kg',
     animal:'perro',
-    productImg :'./imagenes/marcas/marcas/capitan/1.jpg',
+    productImg :'./imagenes/marcas/marcas/capitan/1.png',
     precio:3935,
     },  
     {marca: 'Belcan',
