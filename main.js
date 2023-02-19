@@ -438,8 +438,9 @@ const filtrarAnimal =(e)=>{
 
 //-----------filtro por marca------
 const filtrarMarcas =(e)=>{
-    const marcaSelect=e.target.dataset.logomarca;    
-     console.log(e.target.dataset.logomarca);
+    const marcaSelect=e.target.dataset.logomarca;  
+      
+    //  console.log(e.target.dataset.logomarca);
     console.log(marcaSelect);
     if(!marcaSelect){
 
@@ -447,15 +448,17 @@ const filtrarMarcas =(e)=>{
     }
     else{
         let filtrado = products.filter(p => p.marca == marcaSelect);
-        let filtradoMarcas = logosmarcas.filter(p => p.marca == marcaSelect);
-
+         let filtradoMarcas = logosmarcas.filter(p => p.marca == marcaSelect);
+        // marcas.classList.add('escalar');
+       // filtradoMarcas.logomarca.style.transform = "scale(1.5)";
         // console.log(filtrado);
         renderproductfilter(filtrado);
         vermasbtn.classList.add('btnhiden');
         quienesSomos.classList.add('btnhiden');
-        renderlogo(filtradoMarcas);
+        // renderlogo(filtradoMarcas);
         // marcas.classList.add('btnhiden');
         navbarlist.classList.add('hidden');
+        // location.href = "#productos";
 
     }
 
