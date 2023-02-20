@@ -63,6 +63,16 @@ body{
 .menu h4{
   color:darkgray;
 }
+.productoposition{
+  display: flex;
+  position: relative;
+
+
+}
+.productopositionchild{
+  position: absolute;
+  top: -80px;
+}
 .headercontainer{
   background-color:#186781;
   /* background-color:#925747; */
@@ -118,26 +128,7 @@ color:#fff;
 font-weight: 700;
 }
 
-.gato img{
-  /* max-width: 110px; */
 
-  /* background-color: aqua; */
-}
-.perro img{
-  /* max-width: 110px; */
-  /* margin-left: 2rem; */
-  /* background-color: aqua; */
-}
-/* .perro{
-  font-size: 40px;
-  
-  height: 100px;
-}
-.gato{
-  font-size: 40px;
-
-  height: 100px;
-} */
 .perroGatoContainer{
 /* background-color: #074F71; */
 display: flex;
@@ -156,6 +147,11 @@ flex-direction: row;
 justify-content: space-between;
 padding: 2rem;
 }
+.perroGato:active{
+  transform: scale(1.5);
+  
+}
+
 .perro img{
 height: 110px;
 position: absolute;
@@ -204,7 +200,11 @@ height: 110px;
   width: 100px;
   height:100px;
   border-radius: 100%;
-  transition: width 0.5s;
+  
+  
+}
+.logomarca:active{
+  transform: scale(2);
   
 }
 
@@ -215,9 +215,6 @@ height: 110px;
   
 }
 
-.logomarca:hover{
-  width: 150px;
-}
 .quienesSomos{
   display: flex;
   flex-direction: column;
