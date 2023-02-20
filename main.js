@@ -5,6 +5,7 @@ const productos=document.getElementById('productos');
 const vermasbtn=document.getElementById('vermasbtn');
 const quienesSomos=document.getElementById('quienesSomos');
 const marcas=document.getElementById('marcas');
+const productopositionchild=document.getElementById('productopositionchild');
 const animal=document.querySelectorAll('.animal');
 
 const navbar=document.querySelector('.navbar-list');
@@ -357,7 +358,7 @@ const renderlogo= (p)=>{
 const renderproduct=p=>{
     // console.log('hola');
     if(p.stock){
-        console.log('pepe');
+        // console.log('pepe');
         return`
         <div class="producto">
         <div class="productoImg">
@@ -447,8 +448,8 @@ const filtrarAnimal =(e)=>{
         quienesSomos.classList.add('btnhiden');
         // marcas.classList.add('btnhiden');
         navbarlist.classList.add('hidden');
-        location.href = "#productopositionchild";
-
+        // location.href = "#productopositionchild";
+        productopositionchild.scrollIntoView({ behavior: "smooth"});
     }
 
 }
@@ -475,8 +476,8 @@ const filtrarMarcas =(e)=>{
         // renderlogo(filtradoMarcas);
         // marcas.classList.add('btnhiden');
         navbarlist.classList.add('hidden');
-        location.href = "#productopositionchild";
-
+        // location.href = "#productopositionchild";
+        productopositionchild.scrollIntoView({ behavior: "smooth"});
     }
 
 }

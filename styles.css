@@ -148,7 +148,7 @@ justify-content: space-between;
 padding: 2rem;
 }
 .perroGato:active{
-  transform: scale(1.5);
+  transform: scale(1.2);
   
 }
 
@@ -204,7 +204,7 @@ height: 110px;
   
 }
 .logomarca:active{
-  transform: scale(2);
+  transform: scale(1.2);
   
 }
 
