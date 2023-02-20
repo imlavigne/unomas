@@ -63,6 +63,7 @@ const products =[
         animal:'perro',
         productImg :'./imagenes/marcas/marcas/sabrositos/1.png',
         precio:'Sin Stock',
+        stock:'false',
     },
     {
         marca: 'Sabrositos',
@@ -70,6 +71,7 @@ const products =[
         animal:'perro',
         productImg :'./imagenes/marcas/marcas/sabrositos/2.png',
         precio:'Sin Stock',
+        stock:'false',
     },
     {
         marca: 'Infinity',
@@ -354,6 +356,20 @@ const renderlogo= (p)=>{
 }
 const renderproduct=p=>{
     // console.log('hola');
+    if(p.stock){
+        console.log('pepe');
+        return`
+        <div class="producto">
+        <div class="productoImg">
+          <img class="productoShadow" src="${p.productImg}"/>
+        </div>
+       
+        <p>${p.descripcion}</p>
+        <div class="precio">${p.precio.toLocaleString('de-DE')}</div>
+
+    </div>`
+    }
+    
     return`
         <div class="producto">
         <div class="productoImg">
