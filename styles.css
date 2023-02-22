@@ -93,6 +93,20 @@ body{
 }
 .lupa{
 color:#186781; 
+
+}
+.buscador{
+  display: flex;
+  flex-direction: row;
+  /* width: 5rem; */
+  position: absolute;
+  right: 10px;
+}
+.busquedainput{
+  width: 5rem;
+  position: absolute;
+  right: 10px;
+
 }
 .headercontainer img{
 margin-top: 8px;
