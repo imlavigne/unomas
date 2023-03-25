@@ -488,18 +488,20 @@ const filtrarMarcas =(e)=>{
 
 }
 const lupabuscar=()=>{
-lupa.classList.add('lupa');
+// lupa.classList.add('lupa');
 buscador.classList.remove('btnhiden');
 }
 const buscarpalabra=()=>{
     //  const textIntro=buscarinput.value.trim().toUpperCase().replace(/ /g, "");
     const textIntro=buscarinput.value;
+    // console.log("hola");
     // let busquedas = products.filter(p => p.marca.trim().toUpperCase().replace(/ /g, "") == textIntro);
     let expresion = new RegExp(`${textIntro}.*`, "i");
     let mascotasFiltradas = products.filter(p => expresion.test(p.marca));
     if(!mascotasFiltradas.length){
-
-    console.log('no se encotraron productos');
+        buscarinput.value='';
+        alert("No se encontraron productos");   
+        buscador.classList.add('btnhiden'); 
     
     }
     else{
@@ -510,9 +512,15 @@ const buscarpalabra=()=>{
     buscador.classList.add('btnhiden');
     vermasbtn.classList.add('btnhiden');
     buscarinput.value='';
+
     }
 }
-
+const scroliando=()=>{
+    if(!buscador.classList.contains('btnhiden') ||!navbarlist.classList.contains('hidden')){
+        buscador.classList.add('btnhiden');
+        navbarlist.classList.add('hidden');
+    }
+}
 const init =()=>{
     renderlogo(logosmarcas);
     // renderproducts(products);
@@ -525,6 +533,10 @@ const init =()=>{
     marcas.addEventListener("click",filtrarMarcas);
     lupa.addEventListener("click",lupabuscar);
     buscar.addEventListener("click",buscarpalabra);
+    window.addEventListener("scroll",scroliando);
     
 }
+
+
+
 init();
