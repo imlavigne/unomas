@@ -348,7 +348,30 @@ const products =[
         animal:'gato',
         productImg :'./imagenes/marcas/marcas/gatos/vitalcan/1.png',
         precio:'$ 5.875',
-    },    
+    },  
+    {
+        marca: 'Sabrositos',
+        descripcion : 'Alimento Sabrositos Para Gatos Mix 20 Kg',
+        animal:'gato',
+        productImg :'./imagenes/marcas/marcas/gatos/sabrositos/sabrositos-gato.png',
+        precio:'$ 5.875',
+    },   
+    {
+            // seria cat chow 
+        marca: 'Dog Chow',
+        descripcion : 'Aliemento Purina Para Gato Cat Chow Gatitos 8 Kg',
+        animal:'gato',
+        productImg :'./imagenes/marcas/marcas/gatos/dogchow/cat-chow-gatitos.png',
+        precio:'$ 5.875',
+    },   
+    {
+        //no tiene marca alimento hop
+        marca: '',
+        descripcion : 'Alimento VitalCan Para Gato Hop kitche 7,5 Kg',
+        animal:'gato',
+        productImg :'./imagenes/marcas/marcas/gatos/hop-gatitos.png',
+        precio:'$ 5.875',
+    },     
 ];
 
 let arrayauxiliar=[];
