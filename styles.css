@@ -95,6 +95,7 @@ body{
 color:#186781;
 
 } */
+
 .buscador{
   display: flex;
   flex-direction: row;
@@ -133,7 +134,31 @@ color:#186781;
   margin: 2rem;
 }
 
+.noencontrado{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0px;
+  top: 150px;
+  width: 100vw;
+  height: 30vh;
+  text-align: center;
+  background-color: #186781;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+.noEncontradoX{
 
+display: flex;
+ 
+  position: absolute;
+  right: 40px;
+  top: 10px;
+cursor: pointer;
+
+}
 .headercontainer img{
 margin-top: 8px;
   width:80px ;
